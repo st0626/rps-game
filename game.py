@@ -5,6 +5,7 @@ name = "Scotty"
 while name == "Scotty":
     user_pick = input('Pick rock(1), paper(2), or scissors(3):  ')
     computer = random.randint(1,3)
+    
     if user_pick == '1':
         print('you picked rock!')
     elif user_pick == '2':
