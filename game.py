@@ -1,10 +1,8 @@
 import random
 
-name = "Scotty"
 
-while name == "Scotty":
-    user_pick = input('Pick rock(1), paper(2), or scissors(3):  ')
-    computer = random.randint(1,3)
+while True:
+    user_pick = input('Pick rock(1), paper(2), or scissors(3) or type "end" to end the game:  ')
     
     if user_pick == '1':
         print('you picked rock!')
@@ -15,14 +13,8 @@ while name == "Scotty":
     else:
         print("you didn't pick a number?!!")
     
+    computer_pick = ['rock', 'paper', 'scissors']
+    print('Computer picks ' + random.choice(computer_pick) + "!")
     
-    if computer == 1:
-        print('computer picks rock!')
-    elif computer == 2:
-        print('computer picks paper!')
-    elif computer == 3:
-        print('computer picks scissors!')
-    else:
-        print("computer didn't pick a number!")
-    break
-
+    if user_pick == "end":
+        break
