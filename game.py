@@ -2,7 +2,7 @@ import random
 
 
 while True:
-    user_pick = input('Pick rock(1), paper(2), or scissors(3) or type "end" to end the game:  ')
+    user_pick = input('Pick rock(0), paper(1), or scissors(2): ')
     
     options = ["rock!", "paper!", "scissors!"]
     if int(user_pick) > len(options) and int(user_pick) > 0:
@@ -13,7 +13,4 @@ while True:
     computer_pick = ['rock', 'paper', 'scissors']
     print('Computer picks ' + random.choice(computer_pick) + "!")
     
-    
-
-
-    
+    break
